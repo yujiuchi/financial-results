@@ -1,22 +1,113 @@
-<h1>決算統計ダッシュボードサンプル</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>収入内訳</h2>
-<ul>
-  <li>04表ベース</li>
-  <li>サンバーストグラフ</li>
-</ul>
-<a href="04.html" target="_blank">収入内訳</a>
+  <title>決算統計ダッシュボード</title>
+  <meta
+    name="description"
+    content="決算統計データをインタラクティブなグラフで確認できるダッシュボードです。"
+  >
 
-<h2>基金の状況</h2>
-<ul>
-  <li>29表ベース</li>
-  <li>ウォーターフォールグラフ</li>
-</ul>
-<a href="29.html" target="_blank">基金の状況</a>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-<h2>資金収支の状況</h2>
-<ul>
-  <li>32表ベース</li>
-  <li>ウォーターフォールグラフ</li>
-</ul>
-<a href="32h.html" target="_blank">資金収支の状況</a>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">FINANCIAL DASHBOARD</p>
+      <h1>決算統計ダッシュボード</h1>
+      <p class="lead">
+        決算統計の各種データを、インタラクティブなグラフで可視化しています。
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-heading">
+      <div>
+        <h2>ダッシュボード一覧</h2>
+        <p>確認したい項目を選択してください。</p>
+      </div>
+      <span class="count">3 dashboards</span>
+    </section>
+
+    <div class="dashboard-grid">
+
+      <a class="dashboard-card card-income" href="04.html">
+        <div class="card-icon" aria-hidden="true">収</div>
+
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">04表</span>
+            <span class="tag">Sunburst</span>
+          </div>
+
+          <h3>収入内訳</h3>
+
+          <p>
+            歳入の構成を階層別に表示し、各区分の規模や内訳を確認できます。
+          </p>
+
+          <span class="card-link">ダッシュボードを見る</span>
+        </div>
+      </a>
+
+      <a class="dashboard-card card-fund" href="29.html">
+        <div class="card-icon" aria-hidden="true">基</div>
+
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">29表</span>
+            <span class="tag">Waterfall</span>
+          </div>
+
+          <h3>基金の状況</h3>
+
+          <p>
+            基金残高の増減要因と、年度間の変化を確認できます。
+          </p>
+
+          <span class="card-link">ダッシュボードを見る</span>
+        </div>
+      </a>
+
+      <a class="dashboard-card card-balance" href="32h.html">
+        <div class="card-icon" aria-hidden="true">資</div>
+
+        <div class="card-content">
+          <div class="card-tags">
+            <span class="tag">32表</span>
+            <span class="tag">Waterfall</span>
+          </div>
+
+          <h3>資金収支の状況</h3>
+
+          <p>
+            資金収支の構成と、各項目が収支に与える影響を確認できます。
+          </p>
+
+          <span class="card-link">ダッシュボードを見る</span>
+        </div>
+      </a>
+
+    </div>
+
+    <section class="notice">
+      <h2>このサイトについて</h2>
+      <p>
+        このページは、決算統計データの可視化方法を検討するためのサンプルです。
+        掲載内容は実際の決算情報と異なる場合があります。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>決算統計ダッシュボード</span>
+      <span>Powered by Plotly / GitHub Pages</span>
+    </div>
+  </footer>
+</body>
+</html>
